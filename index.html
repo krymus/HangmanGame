@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
+  <title>Hangman</title>
+</head>
+<body>
+<div class="container">
+  <h1 class="text-center">Hangman</h1>
+  <div class="float-right">Wrong Guesses: <span id='mistakes'>0</span> of <span id='maxWrong'></span></div>
+  <div class="text-center">
+    <canvas id="canv" width="400" height="400"></canvas>
+    <p>Guess the Animal:</p>
+    <p id="wordSpotlight">The word to be guessed goes here</p>
+    <div id="keyboard"></div>
+    <button id = "reset" onClick="reset()">Reset</button>
+  </div> 
+</div>
+
+<script src='hangman.js'></script>
+</body>
+</html>
